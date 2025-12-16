@@ -1,0 +1,37 @@
+<!-- Amazon feedback form Example -->
+ <!-- Day 1 -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon feedback form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+ </head>
+ <body>
+    <main>
+        <section class = "feedback-card">
+            <h2>Employee Portal</h2>
+            <p>Share Your Daily Update</p>
+
+            <form id = "updateform">
+                <div class = "form-group">
+                    <label for = "empname">NAME :</label>
+                    <input type = "text" id = "empname" placeholder="Enter Name " required>
+                </div>
+                
+                <div class = "form-group">
+                    <label for="empupdate">Update :</label>
+                    <textarea id = "empupdate" rows = "3" placeholder="What did you Learn Today "></textarea>
+                </div>
+
+                <button type="button" id = "submitbtn" data-dept= "engineering">Submit</button>
+            </form>
+            
+            <p id = "statusmsg"></p>
+        </section>
+    </main>
+ </body>
+ </html>
