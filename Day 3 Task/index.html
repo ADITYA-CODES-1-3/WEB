@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Typing Master</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>⚡ Speed Typer</h1>
+        
+        <div class="quote-display" id="quoteDisplay">Loading...</div>
+        
+        <textarea id="quoteInput" class="quote-input" placeholder="Start typing here..."></textarea>
+        <div id="resultModal" class="result-modal hidden">
+              <h2>🎉 Completed!</h2>
+             <p>Your Speed: <span id="finalWpm">0</span> WPM</p>
+             <button onclick="renderNewQuote()">Play Again</button>
+        </div>
+        <div class="stats">
+            <p>Time: <span id="timer">0</span>s</p>
+            <p>WPM: <span id="wpm">0</span></p>
+        </div>
+        
+        <button id="restartBtn" onclick="renderNewQuote()">New Quote</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

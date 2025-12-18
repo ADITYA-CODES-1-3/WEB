@@ -1,0 +1,114 @@
+body {
+    background: #232323;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #333;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.quote-display {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    word-break: break-all;
+}
+
+.quote-input {
+    background-color: transparent;
+    border: 2px solid #555;
+    color: white;
+    width: 100%;
+    height: 8rem;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    resize: none; 
+    outline: none;
+}
+
+.quote-input:focus {
+    border-color: #00ff88;
+}
+
+/* Colors for correct/incorrect letters */
+.correct {
+    color: #00ff88;
+}
+
+.incorrect {
+    color: #ff4444;
+    text-decoration: underline;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+button {
+    margin-top: 1rem;
+    padding: 10px 20px;
+    background: #00ff88;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button:hover {
+    background: #00cc6a;
+}
+/* Utility to hide elements */
+.hidden {
+    display: none;
+}
+
+/* The Success Message Area */
+.result-modal {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: rgba(0, 255, 136, 0.1); /* Light green background */
+    border: 2px solid #00ff88;
+    border-radius: 10px;
+    animation: popIn 0.3s ease-out;
+}
+
+.result-modal h2 {
+    margin: 0;
+    color: #00ff88;
+}
+
+.result-modal p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Disable the textarea when game is over */
+.quote-input:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    border-color: #555;
+}
+
+/* Small animation for the modal */
+@keyframes popIn {
+    0% { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
